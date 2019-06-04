@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palette</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <nav class="navigation">&#9776;</nav>
+        <h1 class="title-h1">CodeJam Animation Player</h1>
+        <menu class="menu"></menu>
+    </header>
+    <main class="content">
+        <div class="sidebar">
+            <div class="sheet" id="sheetTool">
+                <button class="btn" id="bucket"><img src="images/bucket.svg" alt="">Paint bucket (B)</button>
+                <button class="btn" id="choose_color"><img src="images/choose_color.svg" alt="">Choose color (C)</button>
+                <button class="btn" id="move"><img src="images/move.svg">Move (M)</button>
+                <button class="btn" id="transform"><img src="images/transform.svg" alt="">Transform (T)</button>
+            </div>
+            <div class="sheet" id="color_sheet">
+                <div class="item-sheet">
+                    <div class="circle" id="current_color"></div> Current color
+                </div>
+                <div class="item-sheet">
+                    <div class="circle" id="prev_color"></div> Prev color
+                </div>
+                <div class="flex-wrap">
+                    <div>
+                        <div class="item-sheet">
+                            <div class="circle" id="red"></div> red
+                        </div>
+                        <div class="item-sheet">
+                            <div class="circle" id="blue"></div> blue
+                        </div>
+                        <div class="item-sheet">
+                            <div class="circle" id="orange"></div> orange
+                        </div>
+                        <div class="item-sheet">
+                            <div class="circle" id="pink"></div> pink
+                        </div>
+                    </div>
+                    <div>
+                        <div class="item-sheet">
+                            <div class="circle" id="purple"></div> purple
+                        </div>
+                        <div class="item-sheet">
+                            <div class="circle" id="green"></div> green
+                        </div>
+                        <div class="item-sheet">
+                            <div class="circle" id="yellow"></div> yellow
+                        </div>
+                        <div class="item-sheet">
+                            <div class="circle" id="grey"></div> grey
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="frames" id="frames">
+                <li class="item-frame active-frame" id="frame">
+                    <span class="number-frame">1</span>
+                    <button class="btn-frame-li" id="btn-copy"><img src="images/copy.svg" alt="" width="20"></button>
+                    <button class="btn-frame-li" id="btn-delete"><img src="images/rubbish-bin.svg" alt=""></button>
+                </li>
+            </ul>
+            <button class="btn-frame" id="btn-add-frame"><img src="images/add-plus-button.svg" alt="">Add new frame</button>
+        </div>
+        <section class="canvas">
+            <canvas id="drawing-canvas" width="700" height="650">
+            </canvas>
+        </section>
+        <section>
+            <canvas class="canvas-animation" id="animation-frame" width="270" height="250"></canvas>
+            <div class="main-fps">
+                <p class="number-fps-min">0 fps</p>
+                <label for="input-range-fps"></label><input type="range" id="input-range-fps" class="input-range-fps" min="0" max="24" value="4">
+                <p class="number-fps-max">24 fps</p>
+            </div>
+            <button class="btn-option" id="open-animation">Open preview</button>
+            <button class="btn-option" id="start-animation">Start</button>
+        </section>
+    </main>
+</div>
+<script src="obindex.js"></script>
+</body>
+</html>
