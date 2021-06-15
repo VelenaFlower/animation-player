@@ -1,0 +1,23 @@
+{
+  "name": "animation-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://githab.com/rolling-scopes-school/VelenaFlower-2019Q1.git)"
+  },
+  "keywords": [
+    "animation-player"
+  ],
+  "author": "VelenaFlower",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
+  }
+}
